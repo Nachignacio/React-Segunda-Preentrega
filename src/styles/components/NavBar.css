@@ -1,0 +1,22 @@
+nav{
+    ul{
+        border-style: solid;
+        display: flex;
+        background-color: darkcyan;
+        li{
+            list-style: none;
+            #cart{
+                position: absolute;
+                top: 95px;
+                right: 20px;
+                height: 50px;
+            }
+            #cartCounter{
+                position: absolute;
+                top: 110px;
+                right: 60px;
+                height: 30px;
+            }
+        }
+    }
+}
