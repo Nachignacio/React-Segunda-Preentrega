@@ -7,7 +7,7 @@ nav{
             list-style: none;
             #cart{
                 position: absolute;
-                top: 95px;
+                top: 15px;
                 right: 20px;
                 height: 50px;
             }

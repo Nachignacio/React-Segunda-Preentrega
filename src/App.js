@@ -1,27 +1,23 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import ItemListContainer from "./components/Product";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Pianos from "./pages/Pianos";
-import Keyboards from "./pages/Keyboards";
-import Guitars from "./pages/Guitars";
-import Drums from "./pages/Drums";
 
-function App() {
-
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<Home/>}/>
-          <Route path="pianos" element={<Pianos/>}/>
-          <Route path="keyboards" element={<Keyboards/>}/>
-          <Route path="guitars" element={<Guitars/>}/>
-          <Route path="drums" element={<Drums/>}/>
-        </Route>
-      </Routes>
-      <Route path="*" element={<h1>404 no encontrado</h1>}/>
-    </BrowserRouter>
-  ); 
+function App(){
+    return(
+        <div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout/>}>
+                        <Route index element={<Home/>}/>
+                        <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
+                        <Route path="/category/" element={<ItemListContainer/>}/>
+                    </Route>
+                    <Route path="*" element={<h1>404 no encontrado</h1>}/>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    )
 }
 
 export default App;

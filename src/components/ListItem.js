@@ -1,23 +1,10 @@
-function ListItem({texto}){
-    let listStyle = {
-        borderStyle: "none",
-        height: "40px",
-        paddingTop: "30px",
-        listStyle: "none",
-        width: "10vw",
-        justifyText: "center",
-        textAlign: "center",
-        
-    };
+import "../styles/components/ListItem.css"
 
-    let anchorStyle = {
-        textDecoration: "none",
-        color: "black",
-    };
+function ListItem({texto}){
 
     return(
-        <li style={listStyle}>
-            <a href="." style={anchorStyle}>
+        <li>
+            <a href=".">
                 {texto}
             </a>
         </li>

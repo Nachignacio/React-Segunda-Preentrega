@@ -1,0 +1,13 @@
+li{
+    border-style: none;
+    height: 40px;
+    paddingTop: 30px;
+    listStyle: none;
+    width: 10vw;
+    justifyText: center;
+    textAlign: center;
+    a{
+        textDecoration: none;
+        color: black;
+    }
+}
