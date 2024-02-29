@@ -1,4 +1,4 @@
-const items = [
+const productjson = [
     {
        "id":1,
        "title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -241,4 +241,4 @@ const items = [
     }
  ];
 
- export default items;
+ export default productjson;

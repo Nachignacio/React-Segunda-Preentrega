@@ -8,10 +8,9 @@ function NavBar(){
     return (
             <nav className="App">
                 <ul>
-                    <ListItem texto="Shirts"/>
-                    <ListItem texto="Trousers"/>
-                    <ListItem texto="Coats"/>
-                    <ListItem texto="Accesories"/>
+                    <ListItem texto="clothing"/>
+                    <ListItem texto="jewelery"/>
+                    <ListItem texto="electronics"/>
                     <li>
                         <img src={Cart} id="cart" alt="cart"/>
                         <img src={CartCounter} id="cartCounter" alt="cart"/>

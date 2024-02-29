@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import "../styles/components/ListItem.css"
 
 function ListItem({texto}){
 
     return(
         <li>
-            <a href=".">
+            <Link to={`/category/${texto}`}>
                 {texto}
-            </a>
+            </Link>
         </li>
     )
 }
