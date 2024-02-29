@@ -1,5 +1,10 @@
-.Item{
-    height: 700px;
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.catalog .Item{
     width: 500px;
     margin-top: 20px;
     border-style: solid;
@@ -12,21 +17,26 @@
     background-color: rgb(173, 173, 173);
     -webkit-box-shadow: 17px 18px 33px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 17px 18px 33px 0px rgba(0,0,0,0.75);
-    box-shadow: 17px 18px 33px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 18px 25px 0px rgba(0,0,0,0.75);
     
     
 }
 
-.Item h1{
+.catalog .Item h1{
     position: relative;
     }
 
-.Item img{
+.catalog .Item img{
     border-style: solid;
     height: 50%;
     width: 50%;
 }
-p{
+
+.catalog .Item p{
     margin: 20px;
     border-style: solid;
+}
+
+.catalog .Item button{
+    margin-top: 50px;
 }

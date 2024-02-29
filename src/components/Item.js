@@ -8,7 +8,6 @@ const Item = ({item}) => {
         <div className="Item">
             <h1>{item.title}</h1>
             <img src={item.image} alt={item.description}/>
-            <p>{item.description}</p>
             <button>
                 <Link to={`/detail/${item.id}`}>
                     Ver detalle

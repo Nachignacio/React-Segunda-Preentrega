@@ -12,7 +12,7 @@ function Layout(){
             </header>
             <NavBar/>
             <Outlet/>
-            <footer>Pie de pagina</footer>
+            <footer>Contact us</footer>
         </div>
     )
 }

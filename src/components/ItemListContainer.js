@@ -26,7 +26,7 @@ function ItemListContainer(url){
     console.log(products);
 
     return(
-        <div>
+        <div className="catalog">
             {
                 products?.map(el => <Item item={el} key={el.id}/>)
             }
