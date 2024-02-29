@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
+
 const Item = ({item}) => {
     return (
-        <div>
+        <div className="Item">
             <h1>{item.title}</h1>
             <img src={item.image} alt={item.description}/>
             <p>{item.description}</p>

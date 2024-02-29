@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Item from "./Item";
+import "../styles/components/ItemListContainer.css";
 
 
 
@@ -22,7 +23,8 @@ function ItemListContainer(url){
         .catch(err => console.log(err))
     },[categoryId]);
     
-    
+    console.log(products);
+
     return(
         <div>
             {

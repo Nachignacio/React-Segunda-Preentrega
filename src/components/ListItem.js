@@ -4,11 +4,13 @@ import "../styles/components/ListItem.css"
 function ListItem({texto}){
 
     return(
-        <li>
+        <div>
+        <li >
             <Link to={`/category/${texto}`}>
                 {texto}
             </Link>
         </li>
+        </div>
     )
 }
 

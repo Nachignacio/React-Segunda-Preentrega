@@ -1,22 +1,31 @@
 nav{
+    border-style: solid;
+    background-color: darkcyan;
     ul{
-        border-style: solid;
         display: flex;
-        background-color: darkcyan;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
         li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             list-style: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 25vw;
             #cart{
                 position: absolute;
-                top: 15px;
+                top: 91px;
                 right: 20px;
-                height: 50px;
+                height: 40px;
             }
             #cartCounter{
                 position: absolute;
-                top: 110px;
+                top: 95px;
                 right: 60px;
-                height: 30px;
+                height: 25px;
             }
         }
     }
 }
+
