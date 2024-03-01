@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import "../styles/components/ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
     
@@ -19,10 +20,15 @@ const ItemDetailContainer = () => {
     
     
     return (
-        <div>
+        <div className="detail">
             <h1>{details.title}</h1>
             <img src={details.image} alt={details.title}/>
             <p>{details.description}</p>
+            <button>
+                <Link to="/">
+                    Back
+                </Link>
+            </button>
         </div>
     )
 }

@@ -5,10 +5,10 @@ import "../styles/pages/Layout.css";
 
 function Layout(){
     return(
-        <div>
+        <div className="background">
             <header>
                 <h1> Virtual Store </h1>
-                <img src={Logo} alt="logo"/>
+                <img src={Logo} alt="logo" className="logo"/>
             </header>
             <NavBar/>
             <Outlet/>

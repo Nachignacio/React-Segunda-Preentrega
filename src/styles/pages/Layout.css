@@ -1,4 +1,4 @@
-footer{
+.background footer{
     margin-top: 60px;
     height: 20px;
     background-color: darkcyan;
@@ -6,15 +6,22 @@ footer{
     padding: 15px;
 }
 
-header{
+.background header{
     display: flex;
     justify-content: center;
-    h1{
-        display: inline;
-    }
-    img{
-        position: absolute;
-        right: 25px;
-        height: 50px;
-    }
+}
+
+.background{
+    background-color: radial-gradient(darkcyan,grey);
+}
+
+.background .logo{
+    position: absolute;
+    right: 25px;
+    height: 50px;
+}
+
+.background h1{
+    display: inline;
+    margin: 30px;
 }

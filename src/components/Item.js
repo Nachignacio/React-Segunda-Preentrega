@@ -10,7 +10,7 @@ const Item = ({item}) => {
             <img src={item.image} alt={item.description}/>
             <button>
                 <Link to={`/detail/${item.id}`}>
-                    Ver detalle
+                    View details
                 </Link>
             </button>
         </div>
